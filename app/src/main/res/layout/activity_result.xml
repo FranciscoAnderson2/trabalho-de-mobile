@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:padding="32dp"
+    android:background="#F8FAFC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fim de Jogo!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtNomeJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parabéns, Jogador!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtPontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 Pontos"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#4F46E5"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/txtResumoAcertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você acertou 5 de 5 questões"
+        android:textSize="16sp"
+        android:textColor="#64748B"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnJogarNovamente"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Jogar Novamente"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#4F46E5"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnVerHistorico"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Ver Histórico de Partidas"
+        android:textColor="#475569"
+        android:textSize="15sp" />
+
+</LinearLayout>
+

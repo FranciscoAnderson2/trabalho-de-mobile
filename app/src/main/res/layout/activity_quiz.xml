@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_vertical">
+
+        <!-- Barra superior com Progresso e Tempo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/txtProgresso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Questão 1 de 5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#334155" />
+
+            <TextView
+                android:id="@+id/txtTempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempo: 20s"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#EF4444" />
+        </LinearLayout>
+
+        <!-- Barra horizontal do cronômetro -->
+        <ProgressBar
+            android:id="@+id/progressTempo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="20"
+            android:progress="20"
+            android:progressTint="#EF4444"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Caixa de texto da Pergunta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/txtPergunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carregando texto da pergunta..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0F172A"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- 4 Alternativas de Resposta -->
+        <Button
+            android:id="@+id/btnOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Opção 1"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4F46E5"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Opção 2"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4F46E5"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Opção 3"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4F46E5"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnOpcao4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Opção 4"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4F46E5"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
+

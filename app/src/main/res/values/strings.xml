@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Trivia Master</string>
+    <string name="btn_iniciar">Iniciar Partida</string>
+    <string name="btn_sincronizar">Sincronizar Questões Offline</string>
+    <string name="btn_historico">Histórico de Partidas</string>
+    <string name="btn_jogar_novamente">Jogar Novamente</string>
+    <string name="btn_voltar_inicio">Voltar ao Início</string>
+</resources>
+

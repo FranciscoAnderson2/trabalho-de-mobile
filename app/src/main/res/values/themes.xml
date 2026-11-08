@@ -1,0 +1,9 @@
+<resources>
+    <!-- Tema padrão do aplicativo -->
+    <style name="Theme.TriviaMaster" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>
+

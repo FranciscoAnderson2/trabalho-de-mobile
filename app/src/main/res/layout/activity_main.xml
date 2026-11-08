@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo e Título do App -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_trivia"
+            android:contentDescription="Logo Trivia Master"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trivia Master"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz com API REST do Open Trivia DB"
+            android:textSize="14sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="28dp" />
+
+        <!-- 1. Campo de Nome do Jogador -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Jogador:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Ex: Maria Clara"
+            android:inputType="textPersonName"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="16dp"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- 2. Seleção de Categoria -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_spinner"
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- 3. Seleção de Dificuldade -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dificuldade:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDificuldade"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_spinner"
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- 4. Quantidade de Questões -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de Questões:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spinnerQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_spinner"
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Indicador de Carregamento -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão Iniciar Partida -->
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Iniciar Partida"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4F46E5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botão Sincronizar em Segundo Plano (Service) -->
+        <Button
+            android:id="@+id/btnSincronizar"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Sincronizar Questões Offline"
+            android:textColor="#4F46E5"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Botão Histórico -->
+        <Button
+            android:id="@+id/btnHistorico"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Ver Histórico de Partidas"
+            android:textColor="#475569"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
+

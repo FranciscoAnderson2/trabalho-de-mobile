@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="primary_light">#EEF2FF</color>
+    <color name="accent">#06B6D4</color>
+
+    <!-- Cores para resposta certa (verde) e errada (vermelho) -->
+    <color name="verde_acerto">#10B981</color>
+    <color name="vermelho_erro">#EF4444</color>
+
+    <color name="background">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="texto_principal">#0F172A</color>
+    <color name="texto_secundario">#64748B</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fundo_icone">#201C45</color>
+</resources>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissão para consumir a API Open Trivia DB na internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TriviaMaster">
+
+        <!-- 1. COMPONENTE: Activity Principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Outras Activities da aplicação -->
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".HistoryActivity" />
+
+        <!-- 2. COMPONENTE: Content Provider (acesso ao SQLite via URIs) -->
+        <provider
+            android:name=".TriviaProvider"
+            android:authorities="com.example.triviamaster.provider"
+            android:exported="false" />
+
+        <!-- 3. COMPONENTE: Service (download assíncrono em background) -->
+        <service
+            android:name=".SyncService"
+            android:exported="false" />
+
+        <!-- 4. COMPONENTE: Broadcast Receiver (notificação de término de sincronização) -->
+        <receiver
+            android:name=".AvisoReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
+
