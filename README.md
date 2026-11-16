@@ -35,7 +35,7 @@ O aplicativo implementa os 4 componentes fundamentais do Android:
    - `SyncService`: Executa tarefas em segundo plano (como sincronização e rotinas de manutenção de dados) sem bloquear a interface de usuário.
 
 4. **Broadcast Receiver**
-   - `AvisoReceiver`: Registrado no `AndroidManifest.xml` para receber e tratar eventos de broadcast do sistema (como `BOOT_COMPLETED`) e notificações do aplicativo.
+   - `AvisoReceiver`: Recebe o evento de broadcast emitido pelo `SyncService` ao concluir o download assíncrono das questões e notifica o usuário via Toast na tela.
 
 ---
 
