@@ -66,7 +66,7 @@ public class HistoryActivity extends AppCompatActivity {
         } else {
             txtSemHistorico.setVisibility(View.GONE);
             listViewHistorico.setVisibility(View.VISIBLE);
-            ArrayAdapter<String> adaptadorDaLista = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaFormatada);
+            ArrayAdapter<String> adaptadorDaLista = new ArrayAdapter<>(this, R.layout.item_historico, listaFormatada);
             listViewHistorico.setAdapter(adaptadorDaLista);
         }
     }

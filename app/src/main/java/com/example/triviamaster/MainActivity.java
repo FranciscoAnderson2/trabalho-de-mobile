@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -62,17 +63,20 @@ public class MainActivity extends AppCompatActivity {
     private void configurarSpinners() {
         // Categorias simples
         String[] categorias = {"Qualquer Categoria", "Conhecimentos Gerais", "Ciência & Natureza", "Computação", "História"};
-        ArrayAdapter<String> adaptadorCategorias = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categorias);
+        ArrayAdapter<String> adaptadorCategorias = new ArrayAdapter<>(this, R.layout.item_spinner_selecionado, categorias);
+        adaptadorCategorias.setDropDownViewResource(R.layout.item_spinner_dropdown);
         spinnerCategoria.setAdapter(adaptadorCategorias);
 
         // Dificuldade
         String[] dificuldades = {"Qualquer", "Fácil", "Médio", "Difícil"};
-        ArrayAdapter<String> adaptadorDificuldades = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, dificuldades);
+        ArrayAdapter<String> adaptadorDificuldades = new ArrayAdapter<>(this, R.layout.item_spinner_selecionado, dificuldades);
+        adaptadorDificuldades.setDropDownViewResource(R.layout.item_spinner_dropdown);
         spinnerDificuldade.setAdapter(adaptadorDificuldades);
 
         // Quantidade de questões
         String[] quantidades = {"5", "10", "15"};
-        ArrayAdapter<String> adaptadorQuantidades = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, quantidades);
+        ArrayAdapter<String> adaptadorQuantidades = new ArrayAdapter<>(this, R.layout.item_spinner_selecionado, quantidades);
+        adaptadorQuantidades.setDropDownViewResource(R.layout.item_spinner_dropdown);
         spinnerQuantidade.setAdapter(adaptadorQuantidades);
     }
 

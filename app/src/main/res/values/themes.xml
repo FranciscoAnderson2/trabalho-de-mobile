@@ -1,9 +1,12 @@
 <resources>
-    <!-- Tema padrão do aplicativo -->
-    <style name="Theme.TriviaMaster" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Tema do aplicativo: forçado em Modo Claro (Light) para garantir contraste em qualquer celular -->
+    <style name="Theme.TriviaMaster" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="android:statusBarColor">@color/primary_dark</item>
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/texto_principal</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/texto_principal</item>
     </style>
 </resources>
-
